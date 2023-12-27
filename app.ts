@@ -1,5 +1,5 @@
-const namee = "Max";
+const userName = "Max";
 
-// namee = 3;
+// userName = 3;
 
-console.log(namee);
+console.log(userName);
