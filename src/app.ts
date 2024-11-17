@@ -1,15 +1,27 @@
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-// if (button) {
-//   button.addEventListener("click", () => {
-//     console.log("clicked");
-//   });
+// // if (button) {
+// //   button.addEventListener("click", () => {
+// //     console.log("clicked");
+// //   });
+// // }
+
+// function clickHandler(message: string) {
+//   console.log("clicked" + message);
 // }
 
-function clickHandler(message: string) {
-  console.log("clicked" + message);
+// if (button) {
+//   button.addEventListener("click", clickHandler.bind(null, "you're welcome!"));
+// }
+
+const add = (a: number, b: number) => a + b;
+const printOutput: (a: number | string) => void = (output) =>
+  console.log(output);
+
+const botton = document.querySelector("button");
+
+if (botton) {
+  botton.addEventListener("click", (event) => console.log(event));
 }
 
-if (button) {
-  button.addEventListener("click", clickHandler.bind(null, "you're welcome!"));
-}
+printOutput(add(5, 2));
